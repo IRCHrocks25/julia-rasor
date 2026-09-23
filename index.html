@@ -35,13 +35,13 @@ nav.site .links a::after{content:"";position:absolute;left:0;bottom:.35rem;width
 nav.site .links a:hover::after{transform:scaleX(1);transform-origin:left}
 .inq .arr{display:inline-block;transition:transform .35s cubic-bezier(.77,0,.18,1)}
 .inq:hover .arr{transform:translate(3px,-3px)}
-@media(min-width:1024px){nav.site .links{display:flex}}
+@media(min-width:900px){nav.site .links{display:flex}}
 .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;background:none;border:0;cursor:pointer;align-items:flex-end;margin-right:-8px}
 .burger span{display:block;width:26px;height:1.5px;background:#fff;transition:transform .4s,opacity .3s}
 .burger.is-open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
 .burger.is-open span:nth-child(2){opacity:0}
 .burger.is-open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-@media(min-width:1024px){.burger{display:none}}
+@media(min-width:900px){.burger{display:none}}
 .mobile-menu{position:fixed;inset:0;z-index:80;background:var(--black);color:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:var(--gutter);transform:translateY(-100%);transition:transform .6s cubic-bezier(.77,0,.18,1)}
 .mobile-menu.open{transform:translateY(0)}
 .mobile-menu a{font-family:var(--head);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,11vw,4.5rem);line-height:1.05;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
@@ -62,7 +62,7 @@ section{position:relative}
 
 /* 01 HERO */
 .hero-title-fixed{position:fixed;inset:0;display:flex;flex-direction:column;justify-content:center;padding-inline:var(--gutter);z-index:4;pointer-events:none}
-.hero-title-fixed .h-display{font-size:clamp(3rem,14vw,12rem);line-height:.9}
+.hero-title-fixed .h-display{font-size:clamp(2.4rem,10.5vw,8.8rem);line-height:.92}
 .hero-title-fixed .l2{align-self:flex-end}
 .s01 .h-display{font-size:clamp(3.4rem,17vw,15.5rem)}
 .s01 .l2{align-self:flex-end}
@@ -74,8 +74,8 @@ section{position:relative}
 @keyframes cue{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
 /* 02 FORM IN MOTION */
-.s02 .fim{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding-inline:var(--gutter);z-index:1;pointer-events:none}
-.s02 .fim .h-display{font-size:clamp(3.8rem,18vw,17rem)}
+.s02 .fim{padding-inline:var(--gutter);pointer-events:none;position:relative;z-index:11}
+.s02 .fim .h-display{font-size:clamp(2.6rem,10vw,8.8rem);line-height:.92;display:block}
 .s02 .l1{align-self:flex-start}.s02 .l2{align-self:flex-end;font-style:italic;font-weight:800;font-family:var(--head)}.s02 .l3{align-self:flex-start;padding-left:8vw}
 .s02 .cap{position:absolute;bottom:1.4rem;right:var(--gutter);text-align:right;z-index:12}
 
@@ -183,7 +183,7 @@ section{position:relative}
 /* 12 FINAL */
 .s12{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-block:clamp(6rem,10vh,8rem);background:var(--black);color:var(--paper)}
 .s12 .fh{position:relative;z-index:12;padding-inline:var(--gutter)}
-.s12 .h-display{font-size:clamp(2.55rem,11.5vw,10.6rem);color:var(--paper);line-height:.88}
+.s12 .h-display{font-size:clamp(2.2rem,8.8vw,7.6rem);color:var(--paper);line-height:.92}
 .s12 .cta-row{position:relative;z-index:12;margin-top:clamp(3rem,7vh,5rem);padding-inline:var(--gutter);display:flex;flex-direction:column;gap:2.5rem}
 .cta-link{display:inline-flex;align-items:center;justify-content:center;gap:1rem;font-family:var(--head);font-weight:800;text-transform:uppercase;font-size:clamp(.95rem,2vw,1.3rem);letter-spacing:.06em;color:var(--paper);border:1px solid rgba(255,255,255,.35);padding:1.15rem 2rem;width:100%;white-space:normal;line-height:1.3;text-align:center;transition:background .4s,color .4s}
 .cta-link:hover{background:var(--paper);color:var(--black)}
@@ -387,10 +387,9 @@ footer .micro-s{color:#fff}
   content:"";
   position:absolute; inset:0;
   z-index:-1;
-  /* Metin okunurluğu için koyu gradient overlay + saf siyah kararma */
+  /* Lightened further — image now clearly visible */
   background:
-    linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.62) 40%, rgba(0,0,0,.72) 100%),
-    rgba(0,0,0,.35);
+    linear-gradient(180deg, rgba(0,0,0,.18) 0%, rgba(0,0,0,.22) 45%, rgba(0,0,0,.30) 100%);
 }
 /* Metin ve içerik overlay'in üstünde kalsın */
 .s04 > *{position:relative;z-index:1}
@@ -471,10 +470,9 @@ footer .micro-s{color:#fff}
   content:"";
   position:absolute; inset:0;
   z-index:-1;
-  /* Metin okunurluğu için koyu overlay — S04 ile aynı seviye */
+  /* Lightened — Willow Spirit image now clearly visible */
   background:
-    linear-gradient(180deg, rgba(0,0,0,.58) 0%, rgba(0,0,0,.66) 45%, rgba(0,0,0,.74) 100%),
-    rgba(0,0,0,.32);
+    linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,.35) 45%, rgba(0,0,0,.44) 100%);
 }
 .s08 > *{position:relative;z-index:1}
 
@@ -665,6 +663,79 @@ footer .micro-s{color:#fff}
   margin-top:0;
   max-width:none;
 }
+
+/* ============ CUSTOM LOGO IMAGE — nav + footer ============ */
+nav.site .logo{
+  isolation:isolate;              /* fully escape the nav's difference blend */
+}
+.nav-logo-img{
+  height:clamp(1.6rem,3.2vw,2.1rem);
+  width:auto;
+  display:block;
+  isolation:isolate;
+  mix-blend-mode:normal !important;
+  filter:none !important;
+  opacity:1 !important;
+}
+.footer-logo-img{
+  height:clamp(1.1rem,2vw,1.4rem);   /* x2 smaller than before */
+  width:auto;
+  display:block;
+  filter:brightness(0) invert(1);
+}
+
+/* ============ FIX: S02 headline layout — guaranteed visible on desktop ============ */
+.s02 .fim{display:block !important}
+.s02 .fim .h-display.l2{text-align:right}
+.s02 .fim .h-display.l3{padding-left:8vw}
+.s02 .fim .h-display[style*="align-self:flex-end"]{text-align:right}
+.s02 .fim .h-display[style*="align-self:flex-start"]{text-align:left}
+
+/* ============ FIX: line-reveal fallback — text visible if JS/scroll fails ============ */
+.line-reveal .lr span{transform:translateY(0)}
+/* JS will override to 110% during animation; if it doesn't run, text stays visible */
+
+/* ============ FIX: photo captions — readable on any background ============ */
+.col-image figcaption,
+.s02-portrait figcaption,
+.s06n-image figcaption,
+.s09-slide figcaption,
+.mat-cell .micro-s{
+  mix-blend-mode:normal !important;
+  color:#fff !important;
+  opacity:1 !important;
+  background:rgba(0,0,0,.55);
+  padding:.35rem .6rem;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  border-radius:0;
+  letter-spacing:.14em;
+  font-size:.58rem;
+  font-weight:500;
+}
+.s06n-image figcaption{
+  /* S06 caption sits below the image on paper bg, use dark on paper */
+  background:transparent;
+  color:var(--ink) !important;
+  opacity:.6 !important;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  padding:0;
+}
+
+/* ============ FIX: S04 headline visibility on desktop + no right-side cutoff ============ */
+.s04{position:relative;overflow:hidden}
+.s04 .head{padding-inline:var(--gutter);position:relative;z-index:2}
+.s04 .head .h-display{
+  font-size:clamp(2.6rem,9vw,7.5rem) !important;
+  line-height:.92;
+  max-width:min(90vw, 1100px);
+  word-break:normal;
+}
+.s04 .s04-body{
+  position:relative;z-index:2;
+  max-width:min(90vw, 900px) !important;
+}
 </style>
 </head>
 <body>
@@ -672,7 +743,7 @@ footer .micro-s{color:#fff}
 <div id="loader"><div class="lm">Loading sculpture…</div></div>
 
 <nav class="site" aria-label="Main">
-  <a class="logo" href="#top">Julia S. Rasor</a>
+  <a class="logo" href="#top" aria-label="Julia S. Rasor — home"><img src="https://cdn.katalyst-crm.com/a/7d5a96d6-5e1d-9ed1-2a12-0e403cde54a6" alt="Julia S. Rasor" class="nav-logo-img"></a>
   <div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#process">Process</a></div>
   <div style="display:flex;align-items:center;gap:1.2rem">
     <a class="inq" href="#inquire" style="display:none" id="navInquire">Inquire <span class="arr">↗</span></a>
@@ -690,7 +761,7 @@ footer .micro-s{color:#fff}
 <div class="hero-title-fixed" id="heroTitle" aria-hidden="false">
   <div class="h-display l1">Engineered</div>
   <div class="h-display l2">form.</div>
-  <div class="h-display l1" style="align-self:flex-end">Human</div>
+  <div class="h-display l1 serif-i" style="align-self:flex-end;font-weight:400;font-style:italic">Human</div>
   <div class="h-display l2 serif-i" style="align-self:flex-start;font-weight:400">emotion.</div>
 </div>
 <main id="top">
@@ -741,12 +812,12 @@ footer .micro-s{color:#fff}
     <div class="g">
       <figure class="col-image">
         <img src="https://dashboard.katalyst-crm.com/files/t1/Modernism%20Vibe-apartment-architectural-design-architecture-1115804%20Work.jpg" alt="Modernism Vibe — bronze sculpture installed in an architectural interior" loading="lazy">
-        <figcaption class="micro-s">Modernism Vibe · Bronze · Sited installation</figcaption>
+        <figcaption class="micro-s">Modernism Vibe · Bronze · Photomontage</figcaption>
       </figure>
       <div class="col-copy">
         <span class="micro-s" style="display:block;margin-bottom:1.2rem">Masterpiece Showcase — 03</span>
         <h2 class="line-reveal" data-lines>The Work Speaks First</h2>
-        <blockquote class="s03-quote serif-i line-reveal" data-lines>“My work lives on a continuum where the organic warmth of nature meets the hard geometry of a machine.”</blockquote>
+        <blockquote class="s03-quote serif-i">“My work lives on a continuum where the organic warmth of nature meets the hard geometry of a machine.”</blockquote>
         <div class="s03-attr micro-s">— Julia S. Rasor</div>
         <dl class="works-list">
           <div class="w-row"><dt>Modernism Vibe</dt><dd>Bronze. Brutalist geometry with a human pulse.</dd></div>
@@ -812,7 +883,7 @@ footer .micro-s{color:#fff}
       </div>
       <figure class="s06n-image">
         <img src="https://dashboard.katalyst-crm.com/files/t1/Haute%20Couture,%20Sea%20Tangle%20I%20and%20II%20paintings-Modern-Living-Room-Interior-d-266845795%20Work.jpg" alt="Haute Couture with Sea Tangle I & II — sited installation in a modern living room interior" loading="lazy">
-        <figcaption class="micro-s">Haute Couture · Sea Tangle I & II · Sited installation</figcaption>
+        <figcaption class="micro-s">Haute Couture · Sea Tangle I & II · Photomontage</figcaption>
       </figure>
     </div>
   </section>
@@ -877,11 +948,13 @@ footer .micro-s{color:#fff}
       </div>
       <div class="s09-right">
         <div class="s09-carousel" id="s09Carousel" aria-label="Selected works — auto-advancing gallery">
-          <div class="s09-slide is-on"><img src="https://dashboard.katalyst-crm.com/files/t1/Modernism%20Vibe-architectural-design-architecture-carpet-1841143%20Work2.jpg" alt="Modernism Vibe — architectural setting" loading="lazy"><figcaption class="micro-s">Modernism Vibe</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Me%CC%81nage%20a%CC%80%20trois,%20Julia%20S.%20Rasor,%20beach%20photomontage.jpg" alt="Ménage à trois — beach photomontage" loading="lazy"><figcaption class="micro-s">Ménage à trois</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Danseur,%20Danseuse-modern-house--exterior-with-l-13744481%20Work2.jpg" alt="Danseur, Danseuse — modern house exterior" loading="lazy"><figcaption class="micro-s">Danseur, Danseuse</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Avante-Garde,%20Just%20the%20Right%20Amount%20of%20Wrong,%20Julia%20S.%20Rasor,%20in%20highrise,%20montage.jpg" alt="Avant-Garde in highrise setting" loading="lazy"><figcaption class="micro-s">Avant-Garde · Highrise</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Avant-Garde%20Winged-Front-Elevation--Facade-Of-A--226863079%20Work.jpg" alt="Avant-Garde Winged — front elevation facade" loading="lazy"><figcaption class="micro-s">Avant-Garde Winged</figcaption></div>
+          <div class="s09-slide is-on"><img src="https://dashboard.katalyst-crm.com/files/t1/Modernism%20Vibe-architectural-design-architecture-carpet-1841143%20Work2.jpg" alt="Modernism Vibe — architectural setting" loading="lazy"><figcaption class="micro-s">Modernism Vibe · Photomontage</figcaption></div>
+          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Me%CC%81nage%20a%CC%80%20trois,%20Julia%20S.%20Rasor,%20beach%20photomontage.jpg" alt="Ménage à trois — beach photomontage" loading="lazy"><figcaption class="micro-s">Ménage à trois · Photomontage</figcaption></div>
+          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Danseur,%20Danseuse-modern-house--exterior-with-l-13744481%20Work2.jpg" alt="Danseur, Danseuse — modern house exterior" loading="lazy"><figcaption class="micro-s">Danseur, Danseuse · Photomontage</figcaption></div>
+          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Avante-Garde,%20Just%20the%20Right%20Amount%20of%20Wrong,%20Julia%20S.%20Rasor,%20in%20highrise,%20montage.jpg" alt="Avant-Garde, Just the Right Amount of Wrong — photomontage" loading="lazy"><figcaption class="micro-s">Avant-Garde, Just the Right Amount of Wrong · Photomontage</figcaption></div>
+          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Avant-Garde%20Winged-Front-Elevation--Facade-Of-A--226863079%20Work.jpg" alt="Avant-Garde Winged — front elevation facade" loading="lazy"><figcaption class="micro-s">Avant-Garde Winged · Photomontage</figcaption></div>
+          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/The%20Guardians-modern-house-10536569%20Work.jpg" alt="The Guardians — on deck near lap pool photomontage" loading="lazy"><figcaption class="micro-s">The Guardians · On deck, lap pool · Photomontage</figcaption></div>
+          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Willow%20Spirit-Gray-Loft-Bathroom-Corner-Arm-269227279%20Work2.jpg" alt="Willow Spirit — contemporary bathroom photomontage" loading="lazy"><figcaption class="micro-s">Willow Spirit · Contemporary bathroom · Photomontage</figcaption></div>
           <div class="s09-progress"><span class="s09-bar" id="s09Bar"></span></div>
         </div>
       </div>
@@ -904,8 +977,8 @@ footer .micro-s{color:#fff}
     </div>
     <footer class="site-footer">
       <div class="ft-brand">
+        <img src="https://cdn.katalyst-crm.com/a/7d5a96d6-5e1d-9ed1-2a12-0e403cde54a6" alt="Julia S. Rasor" class="footer-logo-img">
         <div class="ft-wordmark">
-          <span class="ft-name">Julia S. Rasor</span>
           <span class="ft-tag">Sculptor · Inventor · MODE Art Global</span>
         </div>
       </div>
@@ -1001,7 +1074,7 @@ footer .micro-s{color:#fff}
   /* ---- autonomous playhead: ping-pong through the orbit ---- */
   var playhead = 0;          // 0 .. NF-1, fractional
   var dir = 1;               // 1 forward, -1 backward
-  var FPS = 16;              // 48 frames / 16fps = 3s per full 360 turn              // rotation speed (frames per second)
+  var FPS = 10;              // 48 frames / 10fps = 4.8s per full 360 turn (slower)              // rotation speed (frames per second)
   var lastT = performance.now();
   var dragOffset = 0, dragging = false, lastX = 0, vel = 0;
 
@@ -1060,7 +1133,7 @@ footer .micro-s{color:#fff}
   burger.addEventListener("click",function(){setOpen(!open)});
   menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){setOpen(false)})});
   document.addEventListener("keydown",function(e){if(e.key==="Escape")setOpen(false)});
-  var mq=matchMedia("(min-width:1024px)"), navInq=document.getElementById("navInquire");
+  var mq=matchMedia("(min-width:900px)"), navInq=document.getElementById("navInquire");
   function syncNav(m){if(m.matches)setOpen(false);navInq.style.display=m.matches?"inline-flex":"none";}
   syncNav(mq); mq.addEventListener("change",syncNav);
 
