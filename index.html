@@ -395,7 +395,7 @@ footer .micro-s{color:#fff}
   position:absolute; inset:0;
   z-index:-2;
   background:
-    url("https://dashboard.katalyst-crm.com/files/t1/The%20Guardians-modern-house-10536569%20Work.jpg")
+    url("https://cdn.katalyst-crm.com/a/b5e390da-d1cd-25b5-8981-2d46f05883dd")
     center/contain no-repeat;
   background-color:#000;
   transform:scaleX(-1);           /* yatay ayna */
@@ -488,7 +488,7 @@ footer .micro-s{color:#fff}
   position:absolute; inset:0;
   z-index:-2;
   background:
-    url("https://dashboard.katalyst-crm.com/files/t1/Willow%20Spirit-Gray-Loft-Bathroom-Corner-Arm-269227279%20Work2.jpg")
+    url("https://cdn.katalyst-crm.com/a/e8b2ac99-5459-f35c-271b-c68d451d64e5")
     center/cover no-repeat;
   will-change:transform;
 }
@@ -581,8 +581,7 @@ footer .micro-s{color:#fff}
 
 
 @media(max-width:600px){
-  .ft-brand{flex-direction:column;align-items:flex-start;gap:.8rem}
-  .mobile-menu a{font-size:clamp(1.8rem,10vw,4.5rem)}
+
 }
 
 /* Footer branding */
@@ -875,7 +874,15 @@ footer .micro-s{color:#fff}
 .aud .audience-row{margin:0 0 2.4rem}
 .aud-body{font-size:clamp(1.02rem,1.5vw,1.25rem);line-height:1.6;font-weight:300;max-width:62ch;margin:0 0 1.4rem}
 .aud .about-bullets{margin:0 0 1.4rem}
-@media(max-width:600px){.audience-col .ab-title{white-space:normal}}
+
+@media(max-width:600px){
+  .ft-brand{flex-direction:column;align-items:flex-start;gap:.8rem}
+  .mobile-menu a{font-size:clamp(1.8rem,10vw,4.5rem)}
+  .audience-col .ab-title,.s08 .about-l .h-display{white-space:normal}
+  .hero-title-fixed .h-display{font-size:clamp(1.4rem,6.6vw,2.4rem)}
+  .hero-title-fixed .htf-r1{padding-right:clamp(1rem,5vw,2rem)}
+  .hero-title-fixed .htf-r2{padding-inline:clamp(.5rem,5vw,1.5rem)}
+}
 </style>
 </head>
 <body>
@@ -923,9 +930,10 @@ footer .micro-s{color:#fff}
       <div class="micro-s" style="margin-top:.6rem">Bring an idea, a site, or just a question.</div>
     </div>
     <div class="scroll-cue"><span class="micro">Scroll <span class="tick">↓</span></span></div>
+    <div class="corner c-br micro-s" style="opacity:.55">Hero — 01</div>
   </section>
 
-  <!-- 02 HERO HOOK -->
+  <!-- HERO HOOK (transition, part of 01) -->
   <section class="s02 sec-h" data-scene='{"scale":0.95,"px":0.34,"py":0,"frame":4,"opacity":0.4,"mode":"light"}'>
     <div class="fim">
       <div class="h-display l1">She Doesn't</div>
@@ -936,11 +944,11 @@ footer .micro-s{color:#fff}
     <!-- Asymmetric portraits -->
     <div class="s02-portraits-row">
       <figure class="s02-portrait s02-portrait-a">
-        <img src="https://dashboard.katalyst-crm.com/files/t1/julia-s-rasor-portrait-studio.jpeg" alt="Julia S. Rasor in her studio" loading="lazy">
+        <img src="https://cdn.katalyst-crm.com/a/29d4b78b-f43c-2a5e-665e-e1dc9cf57211" alt="Julia S. Rasor in her studio" loading="lazy">
         <figcaption class="micro-s">Studio, San Diego</figcaption>
       </figure>
       <figure class="s02-portrait s02-portrait-b">
-        <img src="https://dashboard.katalyst-crm.com/files/t1/julia-s-rasor-portrait-headshot.jpg" alt="Julia S. Rasor portrait" loading="lazy">
+        <img src="https://cdn.katalyst-crm.com/a/c6473f27-e763-d0bc-e492-41eef98e1ef5" alt="Julia S. Rasor portrait" loading="lazy">
         <figcaption class="micro-s">Julia S. Rasor</figcaption>
       </figure>
     </div>
@@ -951,15 +959,100 @@ footer .micro-s{color:#fff}
     </div>
   </section>
 
-  <!-- 03 MASTERPIECE SHOWCASE -->
+  <!-- 02 ABOUT -->
+  <section class="s08" id="about" data-scene='{"scale":1,"px":0,"py":0,"frame":19,"opacity":0,"mode":"dark"}'>
+    <div class="g">
+      <div class="about-l">
+        <span class="micro-s">About — 02</span>
+        <h2 class="h-display">One Inventor,<br><span class="serif-i" style="font-weight:400">Two Disciplines.</span></h2>
+      </div>
+      <div class="about-r">
+        <blockquote class="s08-quote serif-i">“I won’t complete a sculpture unless it’s a head-turner, a statement piece that makes people do a double-take.”</blockquote>
+        <div class="s08-attr micro-s">Julia S. Rasor</div>
+        <p class="bio">Julia S. Rasor invents. She has done it in two fields. Art and science. These disciplines are not separate domains but collaborative engines for innovation, creativity, and progress throughout human history.</p>
+        <blockquote class="s08-quote serif-i" style="margin-top:2rem">“The greatest scientists are artists as well.”</blockquote>
+        <div class="s08-attr micro-s">Albert Einstein</div>
+        <p class="bio">For more than three decades she invented medical devices — inventing machines that keep human bodies running. Catheters. Contrast agents. Airway devices. Drug delivery applications. About thirty patents. She invented ECHOVIST®, <a class="hoverlabel" href="https://medicaldevice.com" target="_blank" rel="noopener" data-label="MEDICAL DEVICE">the first commercial ultrasonic contrast agent</a>, and went on to found and run medical device companies. She then brought that precision to the human form.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCES — lead-in to Curated Validation -->
+  <section class="aud" data-scene='{"scale":0.85,"px":0.42,"py":0,"frame":13,"opacity":0.08,"mode":"light"}'>
+    <div class="aud-inner aud-grid">
+      <div class="audience-col light-boxes">
+        <div class="audience-box"><span class="ab-num">01</span><span class="ab-title">Landscape Architects</span></div>
+        <div class="audience-box"><span class="ab-num">02</span><span class="ab-title">Luxury Gate &amp; Door Manufacturers</span></div>
+        <div class="audience-box"><span class="ab-num">03</span><span class="ab-title">Luxury Interior Designers</span></div>
+      </div>
+      <div class="aud-copy">
+      <p class="aud-body">Today she builds monumental sculpture for landscape architects, estate architects, interior designers, and corporate art curators who need a statement piece engineered for a site.</p>
+      <ul class="about-bullets aud-bullets">
+        <li>Commissioned sculpture for landscapes, luxury entrances, garden and driveway gates, front doors, and refined interiors.</li>
+        <li>Existing original works in editions commissioned in a range of materials and sizes.</li>
+        <li>Commissioned or existing sculpture available to lease or lease to buy.</li>
+      </ul>
+      <p class="aud-body">She can work directly with a client or as a subcontractor you commission, like any specialist whose work has to hold up under real demands.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 CURATED VALIDATION -->
+  <section class="s09-new" data-scene='{"scale":0.75,"px":-0.42,"py":0,"frame":20,"opacity":0.08,"mode":"light"}'>
+    <div class="s09-grid">
+      <div class="s09-left">
+        <div class="head">
+          <span class="micro-s" style="display:block;margin-bottom:1.2rem">Curated Validation — 03</span>
+          <h2 class="h-display">Recognized by people<br>who know<br><span class="serif-i" style="font-weight:400">the Difference</span></h2>
+        </div>
+        <div class="s09n-venues">
+          <p>Exhibited at SOFA Chicago, Sculptural Objects Functional Art and Design, Featured Artist; San Diego Botanic Garden, Sculpture in the Gardens, multiple years; and Art San Diego, where her work earned a First Place Booth Award for Sculpture.</p>
+        </div>
+        <div class="s09n-quotes">
+          <figure class="testimonial">
+            <blockquote class="serif-i">“It was her energy. That excitement still feels completely intact. She moves from laboratories to studios, from medical devices to sculpture, from science to writing, without treating any of it as a contradiction.”</blockquote>
+            <figcaption class="micro-s">Vaughan Elizabeth Ollier, Co-Founder at <a class="hoverlabel" href="https://www.curiat.co/magazine/volume-01/julia-rasor.html" target="_blank" rel="noopener" data-label="Curiat Article">Curiat</a>, Editor, Context Magazine — London, New York</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="serif-i">“I have had time to research your web pages in depth and admit that your artwork is of the absolute highest quality. There are not many who come even close to your creations.”</blockquote>
+            <figcaption class="micro-s">Tom Ka, Senior Director of Global Business Development, Ambient Walls — Formerly Director of Global Business Development, Ars Mundi</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="serif-i">“These works are absolutely brilliant! Congratulations! …eventually we want an exclusive arrangement.”</blockquote>
+            <figcaption class="micro-s">Glenn Harte, Owner, Harte International Galleries — Formerly in Lahaina Hawaii</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="serif-i">“Love this work. It's authentic, distinctive, and intense.”</blockquote>
+            <figcaption class="micro-s">Mark Shapiro, The Art Fair Advantage — Formerly National Sales Manager, Redwood Art Group</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="s09-right">
+        <div class="s09-carousel" id="s09Carousel" aria-label="Selected works — auto-advancing gallery">
+          <div class="s09-slide is-on"><img src="https://cdn.katalyst-crm.com/a/e8b2ac99-5459-f35c-271b-c68d451d64e5" alt="Willow Spirit — photomontage" loading="lazy"><figcaption class="micro-s">WILLOW SPIRIT • PHOTOMONTAGE</figcaption></div>
+          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/a7003d67-bcfa-4f92-dd6d-4c254ac2d890" alt="Modernism Vibe — photomontage" loading="lazy"><figcaption class="micro-s">MODERNISM VIBE • PHOTOMONTAGE</figcaption></div>
+          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/74ef281a-fc4d-de47-0edf-f77533fa9e9a" alt="Ménage à trois — photomontage" loading="lazy"><figcaption class="micro-s">MENAGE A TROIS • PHOTOMONTAGE</figcaption></div>
+          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/94d8a439-20e9-8487-ccc7-3d8211d0c447" alt="Danseur, Danseuse — photomontage" loading="lazy"><figcaption class="micro-s">DANSEUR, DANSEUSE • PHOTOMONTAGE</figcaption></div>
+          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/b6614191-172c-6510-3b61-652e8604ad32" alt="Avant-Garde, Just the Right Amount of Wrong — photomontage" loading="lazy"><figcaption class="micro-s">AVANT-GARDE, JUST THE RIGHT AMOUNT OF WRONG • PHOTOMONTAGE</figcaption></div>
+          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/283417c8-7b98-f784-6898-64866ea58574" alt="Avant-Garde Winged — photomontage" loading="lazy"><figcaption class="micro-s">AVANT-GARDE WINGED • PHOTOMONTAGE</figcaption></div>
+          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/b5e390da-d1cd-25b5-8981-2d46f05883dd" alt="The Guardians — photomontage" loading="lazy"><figcaption class="micro-s">THE GUARDIANS • PHOTOMONTAGE</figcaption></div>
+          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/3feb2935-e03a-1af3-a91a-e3c99097cf4b" alt="Tinkerbelle on Steroids — sited installation" loading="lazy"><figcaption class="micro-s">TINKERBELLE ON STEROIDS • SITED INSTALLATION</figcaption></div>
+          <div class="s09-progress"><span class="s09-bar" id="s09Bar"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 MASTERPIECE SHOWCASE -->
   <section class="s03 sec-h" id="work" data-scene='{"scale":0.9,"px":0.32,"py":0,"frame":7,"opacity":0.25,"mode":"light"}'>
     <div class="g">
       <figure class="col-image">
-        <img src="https://dashboard.katalyst-crm.com/files/t1/Modernism%20Vibe-apartment-architectural-design-architecture-1115804%20Work.jpg" alt="Modernism Vibe — bronze sculpture installed in an architectural interior" loading="lazy">
+        <img src="https://cdn.katalyst-crm.com/a/35a205a1-8328-488f-b77b-3e0e3f50786d" alt="Modernism Vibe — bronze sculpture installed in an architectural interior" loading="lazy">
         <figcaption class="micro-s">Modernism Vibe · Bronze · Photomontage</figcaption>
       </figure>
       <div class="col-copy">
-        <span class="micro-s" style="display:block;margin-bottom:1.2rem">Masterpiece Showcase</span>
+        <span class="micro-s" style="display:block;margin-bottom:1.2rem">Masterpiece Showcase — 04</span>
         <h2>The Work Speaks First.<br><span class="serif-i" style="font-weight:400">Organic figure to abstract mechanical form.</span></h2>
         <p class="s03-quote serif-i">Julia’s work lives on a continuum where the organic warmth of nature meets the hard geometry of a machine.</p>
         <p class="s03-note">Every piece is available for custom commission, site-responsive scaling, or a curated rotation program.</p>
@@ -978,10 +1071,72 @@ footer .micro-s{color:#fff}
     </div>
   </section>
 
-  <!-- 04 COMMISSION PROCESS — dark, Guardians background -->
+  <!-- 05 STRUCTURAL PORTALS & SPATIAL ANCHORS -->
+  <section class="s05 sec-h" id="portals" data-scene='{"scale":1.3,"px":0,"py":0,"frame":12,"opacity":0.1,"mode":"light"}'>
+    <div class="micro-s" style="display:block;text-align:center;margin-bottom:1.8rem;opacity:.6">Structural Portals &amp; Spatial Anchors — 05</div>
+    <div class="s05-lead">
+      <div class="series-tag micro">Lead Series</div>
+      <h3 class="series-title h-display">The Architecture Series</h3>
+      <p>Her most recent, most site-ready body of work draws from mid-century Modernism and Brutalism: raw, angular forms with the discipline of an engineering drawing, built to stand alongside concrete, steel, and glass.</p>
+    </div>
+    <div class="s05-row">
+      <figure class="s05-divider">
+        <img src="data:image/webp;base64,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" alt="The Fashion Series — bronze runway figures on pedestals and as miniature pendants">
+      </figure>
+      <div class="series support">
+        <div class="series-tag micro">Supporting Series</div>
+        <h3 class="series-title h-display serif-i" style="font-weight:400;font-style:italic">The Fashion Series</h3>
+        <p>A second collection, drawn from her avant-garde Fashion series, brings runway figures caught between one stride and the next, for spaces that call for movement instead of mass.</p>
+      </div>
+    </div>
+    <div class="s05-foot micro-s">Both are commissioned, sited, and installed, not simply set down.</div>
+  </section>
+
+  <!-- 06 COMPLEMENTARY ARTWORKS -->
+  <section class="s06-new sec-h" data-scene='{"scale":0.7,"px":-0.42,"py":0,"frame":15,"opacity":0.12,"mode":"light"}'>
+    <div class="s06n-grid">
+      <div class="s06n-inner">
+        <span class="micro-s" style="display:block;margin-bottom:1.4rem">Complementary Artworks — 06</span>
+        <h2 class="h-display">Enhanced<br>Spaces.<br><span class="serif-i" style="font-weight:400">Floor, wall, and hanging sculpture with complementary paintings.</span></h2>
+        <p class="s06n-lede">Alongside free-standing sculpture, Julia creates dimensional wall and hanging works with complementary paintings that enhance a space. Bronze, steel, mixed media, and fabricated forms rooted in the human figure — each developed to sit within the architecture of a space rather than simply occupy it, so a single commission can extend across a room, a courtyard, or an entrance as one coordinated body of work.</p>
+      </div>
+      <figure class="s06n-image">
+        <img src="https://cdn.katalyst-crm.com/a/e56c6aa4-10f8-44ed-27e2-d1843c0d570b" alt="Haute Couture with Sea Tangle I & II — sited installation in a modern living room interior" loading="lazy">
+        <figcaption class="micro-s">Haute Couture · Sea Tangle I & II • Photomontage</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 07 SCALABILITY & MATERIALS -->
+  <section class="s07-new sec-h" data-scene='{"scale":1.3,"px":0.0,"py":0,"frame":17,"opacity":0.1,"mode":"light"}'>
+    <div class="s07n-grid">
+      <div class="s07n-inner">
+      <span class="micro-s" style="display:block;margin-bottom:1.4rem">Scalability &amp; Materials — 07</span>
+      <h2 class="h-display">One Original.<br><span class="serif-i" style="font-weight:400">Options in Scale &amp; Material.</span></h2>
+      <p class="s07n-body">Long before she sculpted, Rasor used 3D scanning and printing to prototype medical devices. She uses the same technology now, scanning and archiving originals so a work can be produced in a range of sizes and materials, from a four-inch pendant to monumental scale. The technology does not make the art. It lets one original meet a space, a budget, and a purpose without being remade from nothing, much like traditional mold-making and CNC milling methods.</p>
+      <p class="s07n-body">Each sculpture commission is a collaborative process shaped by the artwork, its setting and the client’s vision. Commissions may range from intimate interior works to large-scale outdoor installations and may be created in metal, wood, stone, ceramic, glass, resin, mixed media, found objects or other suitable materials.</p>
+      </div>
+      <div class="s07n-aside">
+      <div class="scale-strip" aria-hidden="true">
+        <div class="scale-mark"><span class="micro-s">4 in</span><div class="tick s"></div></div>
+        <div class="scale-mark"><span class="micro-s">18 in</span><div class="tick m"></div></div>
+        <div class="scale-mark"><span class="micro-s">36 in</span><div class="tick l"></div></div>
+        <div class="scale-mark"><span class="micro-s">60 in</span><div class="tick xl"></div></div>
+        <div class="scale-mark"><span class="micro-s">8′ 6″</span><div class="tick xxl"></div></div>
+        <div class="scale-mark"><span class="micro-s">Monumental</span><div class="tick xxxl"></div></div>
+      </div>
+      <figure class="s07-mini">
+        <img src="https://cdn.katalyst-crm.com/a/713f0816-ab5a-2331-491e-84f9da3f8876" alt="Three Women miniature — four-inch sculpture worn as a bag charm" loading="lazy">
+        <figcaption class="micro-s">Three Women • Miniature</figcaption>
+      </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 COMMISSION PROCESS — dark, Guardians background -->
   <section class="s04" id="commissions" data-scene='{"scale":1,"px":0,"py":0,"frame":9,"opacity":0,"mode":"dark"}'>
     <div class="head">
-      <span class="micro-s" style="display:block;margin-bottom:1.4rem;color:#fff">Commission Process</span>
+      <span class="micro-s" style="display:block;margin-bottom:1.4rem;color:#fff">Commission Process — 08</span>
       <h2 class="h-display" data-mat-head><span>A Business</span><br><span>Partner,</span><br><span class="serif-i" style="font-weight:400">Thirty plus year’s building things.</span></h2>
     </div>
     <div class="s04-body">
@@ -1025,155 +1180,10 @@ footer .micro-s{color:#fff}
     </ol>
   </section>
 
-  <!-- 05 STRUCTURAL PORTALS & SPATIAL ANCHORS -->
-  <section class="s05 sec-h" id="portals" data-scene='{"scale":1.3,"px":0,"py":0,"frame":12,"opacity":0.1,"mode":"light"}'>
-    <div class="s05-lead">
-      <div class="series-tag micro">Lead Series</div>
-      <h3 class="series-title h-display">The Architecture Series</h3>
-      <p>Her most recent, most site-ready body of work draws from mid-century Modernism and Brutalism: raw, angular forms with the discipline of an engineering drawing, built to stand alongside concrete, steel, and glass.</p>
-    </div>
-    <div class="s05-row">
-      <figure class="s05-divider">
-        <img src="data:image/webp;base64,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" alt="The Fashion Series — bronze runway figures on pedestals and as miniature pendants">
-      </figure>
-      <div class="series support">
-        <div class="series-tag micro">Supporting Series</div>
-        <h3 class="series-title h-display serif-i" style="font-weight:400;font-style:italic">The Fashion Series</h3>
-        <p>A second collection, drawn from her avant-garde Fashion series, brings runway figures caught between one stride and the next, for spaces that call for movement instead of mass.</p>
-      </div>
-    </div>
-    <div class="s05-foot micro-s">Both are commissioned, sited, and installed, not simply set down.</div>
-  </section>
-  <!-- 06 PHYSICS OF INTEGRATION -->
-  <section class="s06-new sec-h" data-scene='{"scale":0.7,"px":-0.42,"py":0,"frame":15,"opacity":0.12,"mode":"light"}'>
-    <div class="s06n-grid">
-      <div class="s06n-inner">
-        <span class="micro-s" style="display:block;margin-bottom:1.4rem">Complementary Artworks</span>
-        <h2 class="h-display">Enhanced<br>Spaces.<br><span class="serif-i" style="font-weight:400">Floor, wall, and hanging sculpture with complementary paintings.</span></h2>
-        <p class="s06n-lede">Alongside free-standing sculpture, Julia creates dimensional wall and hanging works with complementary paintings that enhance a space. Bronze, steel, mixed media, and fabricated forms rooted in the human figure — each developed to sit within the architecture of a space rather than simply occupy it, so a single commission can extend across a room, a courtyard, or an entrance as one coordinated body of work.</p>
-      </div>
-      <figure class="s06n-image">
-        <img src="https://dashboard.katalyst-crm.com/files/t1/Haute%20Couture,%20Sea%20Tangle%20I%20and%20II%20paintings-Modern-Living-Room-Interior-d-266845795%20Work.jpg" alt="Haute Couture with Sea Tangle I & II — sited installation in a modern living room interior" loading="lazy">
-        <figcaption class="micro-s">Haute Couture · Sea Tangle I & II • Photomontage</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- 07 VOLUMETRIC SCALABILITY -->
-  <section class="s07-new sec-h" data-scene='{"scale":1.3,"px":0.0,"py":0,"frame":17,"opacity":0.1,"mode":"light"}'>
-    <div class="s07n-grid">
-      <div class="s07n-inner">
-      <span class="micro-s" style="display:block;margin-bottom:1.4rem">Scalability &amp; Materials</span>
-      <h2 class="h-display">One Original.<br><span class="serif-i" style="font-weight:400">Options in Scale &amp; Material.</span></h2>
-      <p class="s07n-body">Long before she sculpted, Rasor used 3D scanning and printing to prototype medical devices. She uses the same technology now, scanning and archiving originals so a work can be produced in a range of sizes and materials, from a four-inch pendant to monumental scale. The technology does not make the art. It lets one original meet a space, a budget, and a purpose without being remade from nothing, much like traditional mold-making and CNC milling methods.</p>
-      <p class="s07n-body">Each sculpture commission is a collaborative process shaped by the artwork, its setting and the client’s vision. Commissions may range from intimate interior works to large-scale outdoor installations and may be created in metal, wood, stone, ceramic, glass, resin, mixed media, found objects or other suitable materials.</p>
-      </div>
-      <div class="s07n-aside">
-      <div class="scale-strip" aria-hidden="true">
-        <div class="scale-mark"><span class="micro-s">4 in</span><div class="tick s"></div></div>
-        <div class="scale-mark"><span class="micro-s">18 in</span><div class="tick m"></div></div>
-        <div class="scale-mark"><span class="micro-s">36 in</span><div class="tick l"></div></div>
-        <div class="scale-mark"><span class="micro-s">60 in</span><div class="tick xl"></div></div>
-        <div class="scale-mark"><span class="micro-s">8′ 6″</span><div class="tick xxl"></div></div>
-        <div class="scale-mark"><span class="micro-s">Monumental</span><div class="tick xxxl"></div></div>
-      </div>
-      <figure class="s07-mini">
-        <img src="https://cdn.katalyst-crm.com/a/713f0816-ab5a-2331-491e-84f9da3f8876" alt="Three Women miniature — four-inch sculpture worn as a bag charm" loading="lazy">
-        <figcaption class="micro-s">Three Women • Miniature</figcaption>
-      </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- 08 ONE DISCIPLINE, NOT TWO — dark opaque -->
-  <section class="s08" id="about" data-scene='{"scale":1,"px":0,"py":0,"frame":19,"opacity":0,"mode":"dark"}'>
-    <div class="g">
-      <div class="about-l">
-        <span class="micro-s">About</span>
-        <h2 class="h-display">One Inventor,<br><span class="serif-i" style="font-weight:400">Two Disciplines.</span></h2>
-      </div>
-      <div class="about-r">
-        <blockquote class="s08-quote serif-i">“I won’t complete a sculpture unless it’s a head-turner, a statement piece that makes people do a double-take.”</blockquote>
-        <div class="s08-attr micro-s">Julia S. Rasor</div>
-        <p class="bio">Julia S. Rasor invents. She has done it in two fields. Art and science. These disciplines are not separate domains but collaborative engines for innovation, creativity, and progress throughout human history.</p>
-        <blockquote class="s08-quote serif-i" style="margin-top:2rem">“The greatest scientists are artists as well.”</blockquote>
-        <div class="s08-attr micro-s">Albert Einstein</div>
-        <p class="bio">For more than three decades she invented medical devices — inventing machines that keep human bodies running. Catheters. Contrast agents. Airway devices. Drug delivery applications. About thirty patents. She invented ECHOVIST®, <a class="hoverlabel" href="https://medicaldevice.com" target="_blank" rel="noopener" data-label="MEDICAL DEVICE">the first commercial ultrasonic contrast agent</a>, and went on to found and run medical device companies. She then brought that precision to the human form.</p>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- AUDIENCES — under the Structural Portals divider image -->
-  <section class="aud" data-scene='{"scale":0.85,"px":0.42,"py":0,"frame":13,"opacity":0.08,"mode":"light"}'>
-    <div class="aud-inner aud-grid">
-      <div class="audience-col light-boxes">
-        <div class="audience-box"><span class="ab-num">01</span><span class="ab-title">Landscape Architects</span></div>
-        <div class="audience-box"><span class="ab-num">02</span><span class="ab-title">Luxury Gate &amp; Door Manufacturers</span></div>
-        <div class="audience-box"><span class="ab-num">03</span><span class="ab-title">Luxury Interior Designers</span></div>
-      </div>
-      <div class="aud-copy">
-      <p class="aud-body">Today she builds monumental sculpture for landscape architects, estate architects, interior designers, and corporate art curators who need a statement piece engineered for a site.</p>
-      <ul class="about-bullets aud-bullets">
-        <li>Commissioned sculpture for landscapes, luxury entrances, garden and driveway gates, front doors, and refined interiors.</li>
-        <li>Existing original works in editions commissioned in a range of materials and sizes.</li>
-        <li>Commissioned or existing sculpture available to lease or lease to buy.</li>
-      </ul>
-      <p class="aud-body">She can work directly with a client or as a subcontractor you commission, like any specialist whose work has to hold up under real demands.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 09 CURATED VALIDATION -->
-  <section class="s09-new" data-scene='{"scale":0.75,"px":-0.42,"py":0,"frame":20,"opacity":0.08,"mode":"light"}'>
-    <div class="s09-grid">
-      <div class="s09-left">
-        <div class="head">
-          <span class="micro-s" style="display:block;margin-bottom:1.2rem">Curated Validation</span>
-          <h2 class="h-display">Recognized by people<br>who know<br><span class="serif-i" style="font-weight:400">the Difference</span></h2>
-        </div>
-        <div class="s09n-venues">
-          <p>Exhibited at SOFA Chicago, Sculptural Objects Functional Art and Design, Featured Artist; San Diego Botanic Garden, Sculpture in the Gardens, multiple years; and Art San Diego, where her work earned a First Place Booth Award for Sculpture.</p>
-        </div>
-        <div class="s09n-quotes">
-          <figure class="testimonial">
-            <blockquote class="serif-i">“It was her energy. That excitement still feels completely intact. She moves from laboratories to studios, from medical devices to sculpture, from science to writing, without treating any of it as a contradiction.”</blockquote>
-            <figcaption class="micro-s">Vaughan Elizabeth Ollier, Co-Founder at <a class="hoverlabel" href="https://www.curiat.co/magazine/volume-01/julia-rasor.html" target="_blank" rel="noopener" data-label="Curiat Article">Curiat</a>, Editor, Context Magazine — London, New York</figcaption>
-          </figure>
-          <figure class="testimonial">
-            <blockquote class="serif-i">“I have had time to research your web pages in depth and admit that your artwork is of the absolute highest quality. There are not many who come even close to your creations.”</blockquote>
-            <figcaption class="micro-s">Tom Ka, Senior Director of Global Business Development, Ambient Walls — Formerly Director of Global Business Development, Ars Mundi</figcaption>
-          </figure>
-          <figure class="testimonial">
-            <blockquote class="serif-i">“These works are absolutely brilliant! Congratulations! …eventually we want an exclusive arrangement.”</blockquote>
-            <figcaption class="micro-s">Glenn Harte, Owner, Harte International Galleries — Formerly in Lahaina Hawaii</figcaption>
-          </figure>
-          <figure class="testimonial">
-            <blockquote class="serif-i">“Love this work. It's authentic, distinctive, and intense.”</blockquote>
-            <figcaption class="micro-s">Mark Shapiro, The Art Fair Advantage — Formerly National Sales Manager, Redwood Art Group</figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="s09-right">
-        <div class="s09-carousel" id="s09Carousel" aria-label="Selected works — auto-advancing gallery">
-          <div class="s09-slide is-on"><img src="https://dashboard.katalyst-crm.com/files/t1/Willow%20Spirit-Gray-Loft-Bathroom-Corner-Arm-269227279%20Work2.jpg" alt="Willow Spirit — photomontage" loading="lazy"><figcaption class="micro-s">WILLOW SPIRIT • PHOTOMONTAGE</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Modernism%20Vibe-architectural-design-architecture-carpet-1841143%20Work2.jpg" alt="Modernism Vibe — photomontage" loading="lazy"><figcaption class="micro-s">MODERNISM VIBE • PHOTOMONTAGE</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Me%CC%81nage%20a%CC%80%20trois,%20Julia%20S.%20Rasor,%20beach%20photomontage.jpg" alt="Ménage à trois — photomontage" loading="lazy"><figcaption class="micro-s">MENAGE A TROIS • PHOTOMONTAGE</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Danseur,%20Danseuse-modern-house--exterior-with-l-13744481%20Work2.jpg" alt="Danseur, Danseuse — photomontage" loading="lazy"><figcaption class="micro-s">DANSEUR, DANSEUSE • PHOTOMONTAGE</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Avante-Garde,%20Just%20the%20Right%20Amount%20of%20Wrong,%20Julia%20S.%20Rasor,%20in%20highrise,%20montage.jpg" alt="Avant-Garde, Just the Right Amount of Wrong — photomontage" loading="lazy"><figcaption class="micro-s">AVANT-GARDE, JUST THE RIGHT AMOUNT OF WRONG • PHOTOMONTAGE</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/Avant-Garde%20Winged-Front-Elevation--Facade-Of-A--226863079%20Work.jpg" alt="Avant-Garde Winged — photomontage" loading="lazy"><figcaption class="micro-s">AVANT-GARDE WINGED • PHOTOMONTAGE</figcaption></div>
-          <div class="s09-slide"><img src="https://dashboard.katalyst-crm.com/files/t1/The%20Guardians-modern-house-10536569%20Work.jpg" alt="The Guardians — photomontage" loading="lazy"><figcaption class="micro-s">THE GUARDIANS • PHOTOMONTAGE</figcaption></div>
-          <div class="s09-slide"><img src="https://cdn.katalyst-crm.com/a/3feb2935-e03a-1af3-a91a-e3c99097cf4b" alt="Tinkerbelle on Steroids — sited installation" loading="lazy"><figcaption class="micro-s">TINKERBELLE ON STEROIDS • SITED INSTALLATION</figcaption></div>
-          <div class="s09-progress"><span class="s09-bar" id="s09Bar"></span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10 DESIGN BLUEPRINT INITIATION — dark final CTA -->
+  <!-- 09 INQUIRE — dark final CTA -->
   <section class="s12" id="inquire" data-scene='{"scale":1.28,"px":0,"py":-0.03,"frame":23,"opacity":0.4,"mode":"dark"}'>
     <div class="fh">
-      <span class="micro-s" style="display:block;margin-bottom:1.4rem;color:#fff">Design Blueprint Initiation</span>
+      <span class="micro-s" style="display:block;margin-bottom:1.4rem;color:#fff">Inquire — 09</span>
       <h2 class="h-display" data-final><span>Start With a</span><br><span>Conversation,</span><br><span class="serif-i" style="font-weight:400">Not a Catalog</span></h2>
     </div>
     <div class="cta-row">
